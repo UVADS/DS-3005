@@ -28,20 +28,173 @@ Credit Type: Grade (A-F)
 
 ## A Little Bit About the Course
  
+Math for Data Science
 
-## What you’ll learn along the way
+Course objectives
+Broad objectives: To prepare students to become data scientists who actively engage with the math that underlies important methods,
+By knowing the mathematical notation, operations, and techniques that are used to construct these methods (INSTRUCT),
+By learning how to write code to implement these methods from mathematical first principles without relying on any pre-packaged functions (IMPLEMENT),
+Any by making deliberate changes to the underlying mathematics to change these methods in specific ways (INNOVATE).
 
-...... Specific learning objectives are below (example from Foundations of ML):
+**Specific objectives**: To train students to be expert in the terminology and use of key concepts in machine learning and mathematics:
 
-    Be able to describe the field of Data Science and its emerging sub-fields
-    Gain experience working in teams to solve Data Science problems
-    Gain experience communicating Data Science products
-    Articulate the advantages and disadvantages of selected ML approaches
-    Be able to select appropriate ML models given problems and data types
-    Understand the importance of and methods for evaluating ML models
-    Understand the negative outcomes associated with ML/AI bias and how they can be avoided
+* Machine learning:
 
-The course will move rather quickly and can be demanding at times. However, if we all work together to support each other you’ll be amazed how much you learn at the end of the semester!
+	* The OLS estimator for simple regression, presented without matrices;
+
+	* The logistic regression log-likelihood function and its maximum likelihood estimator;
+
+	* The matrix formula for multiple linear regression; 
+
+	* Principal components analysis and multiple correspondence analysis;
+
+	* And neural networks 
+
+* Mathematics:
+
+	* Summation notation;
+	
+	* Single variable derivative calculus and optimization;
+	
+	* Logarithms;
+	
+	* Probability functions;
+	
+	* Integrals and the use of integrals to obtain probabilities;
+	
+	* Multivariate differentiation and optimization;
+	
+	* Matrix notation and arithmetic;
+	
+	* Singularity, eigenmath, and matrix decomposition;
+	
+	* Infinite power series and Taylor series.
+
+**Module 1: Single variable regression**
+
+* Present scatterplots, line of best fit. Discussion of why this method is so hugely important
+
+* Use a pre-built regression function in python/R to fit against example data
+
+* Introduce the formula for the simple OLS estimator
+
+* Instruct:
+
+	* Summation notation
+	
+	* Single variable differentiation
+	
+	* Optimization
+	
+	* Second derivative test/global vs local discussion
+	
+	* From this, reconstruct OLS 
+	
+* Implement:
+
+	* Use R/Python to build their own regression function based on this math. Confirm the results match the pre-built version
+	
+* Innovate:
+
+	* Think about the formula, change it in some intentional way, describe what the changes are designed to do, and implement the new method
+
+**Module 2: Logistic regression** 
+
+* Use a pre-built logit function in python/R to fit against example data
+
+* Introduce the formula for the maximum likelihood estimator for GLM with logit link and Bernouli family
+
+* Instruct:
+
+	* PDFs/PMFs, parameters
+	
+	* Joint probability of IID data
+	
+	* Integration and probability, moments, expected value
+	
+	* Improper integrals for infinite bounds, limits
+	
+	* Construction of a GLM
+	
+	* Logarithms, and why they don’t change the critical point. Logarithmic simplificiation
+	
+	* Multivariate derivatives: gradient, Hessian
+	
+	* Multivariate optimization
+	
+	* Multivariate 2nd derivative test using the Hessian
+	
+	* Newton’s method and hill climbing, towards gradient descent
+	
+* Implement:
+
+	* Use R/Python to build their own regression function based on this math. Confirm the results match the pre-built version
+	
+* Innovate:
+
+	* Think about the formula, change it in some intentional way, describe what the changes are designed to do, and implement the new method
+
+**Module 3: Multiple regression OLS and dimension reduction via PCA and MCA**
+
+* Use a pre-built regress function, PCA, MCA in python/R to fit against example data
+
+* Discussion of what a control variable does in a feature space
+
+* Introduce the matrix formulas for OLS, PCA, and MCA
+
+* Instruct:
+
+	* Definition of a matrix
+	
+	* Operations: matrix & vector multiplication, transpose, matrix inverse (everything you need for (X’X)^-1X’y
+	
+	* Singularity and calculating the determinant
+	
+	* Eigenvectors and eigenvalues
+	
+	* Eigenvector decomposition of a matrix
+	
+	* PCA
+	
+	* Singular value decomposition
+	
+	* MCA
+	
+* Implement:
+
+	* Understand basics of numpy
+	
+	* Use R/Python to build their own regression function based on this math. Confirm the results match the pre-built version
+	
+* Innovate:
+
+	* Think about the formula, change it in some intentional way, describe what the changes are designed to do, and implement the new method
+
+**Module 4: Neural Networks**
+
+* Introduce: Discuss how this is really just a way to approximate a general, unknown function. Brain talk not allowed
+
+* Implementing simple NN in Python
+
+* Instruct:
+
+	* Infinite series; power series
+	
+	* Taylor series
+	
+	* Show how a NN is a multivariate Taylor series of some degree
+	
+	* Deep dive into the chain rule
+	
+	* Backpropagation
+	
+* Implementation:
+
+	* Show how we can use a regression/linear regression to build a NN
+	
+* Innovate:
+
+	* Try splines instead, kernels and basis functions, activation functions, etc.
 
 
 ## How You’ll Know You Are Learning (Assessments)
